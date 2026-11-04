@@ -1,0 +1,37 @@
+{
+  "schema": "SSV-PHYSICS-RESEARCH-PACKAGE-v1",
+  "title": "Sovereign Evidence Root Physics Development Research Package",
+  "affiliation_disclaimer": "Independent SSV Sentinel package; no MIT affiliation or endorsement claimed.",
+  "frozen_roots": {
+    "SOURCE_ROOT": "e5699b86227fc4516f7148581b7dbb9f2816516b6eb707f9f038be879e3c1150",
+    "PHYSICS_ROOT": "c9eea0229f7669a0c015447ede7e25bf37da02b1aca0af62d2bdaf465d628205",
+    "ENGINE_EXECUTION_ROOT": "3fa7319cfc00cde37e99fec7514fda3563445ee49fb2805d27593db74723c4d4",
+    "NUMERICAL_REPRODUCIBILITY_ROOT": "b86f5fd67f03267d541da981cbadb256da92b415442e308c9e13304293be42a2",
+    "AI_WORKLOAD_ROOT": "08f4c62976e59dd41b765bcbdda723ae00f3dc1a148d45dab13d4ee96890b7f9",
+    "MASTER_SOVEREIGN_EVIDENCE_ROOT": "5e7cc7e501de6fd41e1e0eee7d7aa6fe40a7f7f928099fb1549cf318a3c42407"
+  },
+  "historical_geometry": {
+    "baseline_ehs": 629350.0,
+    "balanced_multiplier": "2.723175000000",
+    "aggressive_multiplier": "6.350328011938",
+    "ultra_multiplier": "11.142317486107"
+  },
+  "files": [
+    {
+      "name": "PHYSICS_BREAKTHROUGH.md",
+      "sha256": "c04a7702635ec43ced69993522d7ebe9e3fd31c4cc060c38e6cb37362debf585"
+    },
+    {
+      "name": "RESEARCH_REPRODUCIBILITY.md",
+      "sha256": "f9899c67e5483ef01720b55b53a87f7dd25d680010a38166163e3ce8c0d0332a"
+    },
+    {
+      "name": "BREAKTHROUGH_CLAIMS_MATRIX.md",
+      "sha256": "f450f4cc61b9479159c6d830fbc86b2fee15bc7ba17005d3a9540782d33965de"
+    },
+    {
+      "name": "MIT_STYLE_RESEARCH_PACKAGE.md",
+      "sha256": "5ea77cf46fbeedaca5bc9d5851c053a1101a7a1bc3f816527fb517f143bf493f"
+    }
+  ]
+}
