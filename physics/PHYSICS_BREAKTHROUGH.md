@@ -60,7 +60,7 @@ AGGRESSIVE 3996578.93431296 EH/s
 ULTRA      7012417.50988127 EH/s
 ```
 
-These values are **derived historical surfaces**. Their cryptographic commitments can be reconstructed independently.
+These surfaces are reconstructed from the frozen baseline and the exact full-precision multipliers committed by the historical records. Their arithmetic and cryptographic commitments are independently reconstructable under the published procedure.
 
 ## Historical Cryptographic Commitments
 
