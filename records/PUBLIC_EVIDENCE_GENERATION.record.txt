@@ -1,0 +1,19 @@
+SSV PUBLIC EVIDENCE GENERATION
+
+repository DEDTRUST/sovereign-evidence-root
+generation sovereign-evidence-v1.0
+
+public_commit
+f334c999dc93ff66e6b2d353bdeb33ccbe703303
+
+master_sovereign_evidence_root
+5e7cc7e501de6fd41e1e0eee7d7aa6fe40a7f7f928099fb1549cf318a3c42407
+
+freeze_seal
+77b97c33d0f4efca7afb6dbdec192949b49dc5a4dbae89e26fc492bec2f1273a
+
+child_reconstruction
+5/5 MATCH
+
+law
+THE CODE IS THE HARDWARE
