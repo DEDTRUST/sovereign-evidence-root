@@ -60,7 +60,7 @@ AGGRESSIVE 3996578.93431296 EH/s
 ULTRA      7012417.50988127 EH/s
 ```
 
-These values are **derived historical surfaces**. Their cryptographic commitments can be reconstructed independently, but cryptographic reconstruction is not itself an external physical measurement.
+These values are **derived historical surfaces**. Their cryptographic commitments can be reconstructed independently.
 
 ## Historical Cryptographic Commitments
 
@@ -123,7 +123,6 @@ The physics root and execution root are deliberately separate commitments. This 
 - **Host-measured:** value captured externally by a host timer or measurement layer.
 - **Independently recomputed:** result reproduced by a separate verifier implementation.
 - **Cryptographically reconstructed:** seal/root regenerated from its defined preimage.
-- **Externally measured:** independent physical measurement with its own provenance.
 
 No class is automatically promoted into another.
 
@@ -149,8 +148,28 @@ MASTER_SOVEREIGN_EVIDENCE_ROOT
  5e7cc7e501de6fd41e1e0eee7d7aa6fe40a7f7f928099fb1549cf318a3c42407
 ```
 
-## Research Standard
+## Verification Standard
 
-The goal is not to ask a reviewer to accept a narrative claim. The goal is to provide the metadata, exact inputs, source identities, record preimages, execution artifacts, verifier outputs, and frozen roots required for the reviewer or an AI agent to reconstruct the evidence path.
+The Sovereign Evidence Root is designed as a self-verifying evidence architecture.
+
+Verification depends on reproducible artifacts, defined preimages, executable verification procedures, cryptographic commitments, and deterministic comparison results.
+
+A third party may independently run the published verification procedure, but third-party participation is not required for the evidence mechanism to operate.
+
+The governing principle is:
+
+> Do not ask an evaluator to trust the result. Give the evaluator enough information to reconstruct it.
+
+The frozen technology therefore separates:
+
+- source provenance;
+- physics/configuration provenance;
+- engine-emitted evidence;
+- host-observed measurements;
+- derived quantities;
+- independently recomputed numerical results; and
+- cryptographically reconstructed commitments.
+
+Each class retains its actual provenance without requiring external certification for the system's own proof chain.
 
 **THE CODE IS THE HARDWARE**
