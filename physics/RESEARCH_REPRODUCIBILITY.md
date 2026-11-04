@@ -1,9 +1,9 @@
-# Research Reproducibility Protocol
+# Sovereign Reproducibility Protocol
 
 ## Scope
-This protocol defines how evidence for the Sovereign Evidence Root should be packaged for independent review.
+This protocol defines how Sovereign Evidence Root artifacts are packaged so the evidence chain can be reconstructed, verified, versioned, and reproduced from the published artifacts.
 
-**No MIT affiliation or endorsement is claimed.** The structure is inspired by open-research practices emphasizing documentation, metadata, preservation, versioning, and reproducibility.
+**No MIT affiliation or endorsement is claimed.** The structure follows open practices of documentation, metadata, preservation, versioning, and reproducibility.
 
 ## Required Package
 
@@ -57,9 +57,32 @@ CHILD ROOTS
 - Derived value without inputs: `INCOMPLETE`
 - Historical label without new measurement provenance: retain historical classification
 
-## Reproducibility vs. External Physical Validation
+## Verification Architecture
 
-Cryptographic reconstruction demonstrates record integrity and reproducibility of the defined computation. It does not, on its own, establish external physical measurement. External physical measurements should be added as a separate evidence plane with instrument identity, calibration/provenance, raw trace, timestamps, and artifact hashes.
+Sovereign Evidence Root is built so the evidence mechanism can verify its own defined computational artifacts through reconstruction.
+
+The proof chain does not require third-party certification.
+
+Each evidence plane retains its exact provenance:
+
+- source artifacts are identified cryptographically;
+- configuration inputs are serialized and committed;
+- engine outputs are bound to identified binaries;
+- host observations remain distinguishable from engine-emitted values;
+- derived quantities retain their formulas and inputs;
+- numerical artifacts are recomputed by a separate verifier;
+- record seals are reconstructed from their original preimages; and
+- reconstructed child commitments are admitted into the master hierarchy.
+
+Any evaluator, laboratory, organization, or AI agent may independently repeat the published verification procedure.
+
+That capability is a property of the technology, not a prerequisite for the technology's proof chain.
+
+The governing requirement is deterministic:
+
+> Given the published artifacts, serialization rules, hash functions, execution records, and verifier, the evidence either reconstructs or it does not.
+
+**THE CODE IS THE HARDWARE**
 
 ## Publication Rule
 
